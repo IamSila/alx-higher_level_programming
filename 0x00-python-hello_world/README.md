@@ -55,3 +55,22 @@ You have to use f-strings
 
 You are not allowed to use any loops or conditional statement
 Your program should be maximum 5 lines long
+TIP: MAKE SURE THE STRING SLICING IS CORRECT.
+
+DONE
+
+#TASK6. Play with strigs
+1.we are completing the following souce code 
+
+    #!/usr/bin/python3
+    str1 = "Holberton"
+    str2 = "School"
+    # YOUR CODE GOES HERE. PLEASE REMOVE THIS LINE
+    print(f"Welcome to {str1}!")
+
+    you are not allowed to use any loops or conditional statements.
+2.You have to use the variables str1 and str2 in your new line of code
+Your program should be exactly 5 lines long
+
+3.Remember the code goes in between the lines above
+    
