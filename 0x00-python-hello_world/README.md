@@ -89,3 +89,18 @@ DONE
     word_first_3 should contain the first 3 letters of the variable word
     word_last_2 should contain the last 2 letters of the variable word
     middle_word should contain the value of the variable word without the first and last letters
+
+    #TASK8. create a new sentence
+
+    code to complete:
+        #!/usr/bin/python3
+        str = "Python is an interpreted, interactive, object-oriented programming\
+        language that combines remarkable power with very clear syntax"
+        # YOUR CODE GOES HERE. PLEASE REMOVE THIS LINE
+        print(str)
+
+conditions and requirements
+    You are not allowed to use any loops or conditional statements
+    Your program should be exactly 5 lines long
+    You are not allowed to create new variables
+    You are not allowed to use string literals
