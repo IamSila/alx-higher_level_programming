@@ -39,3 +39,19 @@ You are not allowed to cast number to string
 You have to use f-strings
 3.It is a script so chmod thing should apply
 
+
+#TASK5. Print String
+1.we are completing this source code
+    #!/usr/bin/python3
+    str = "Holberton School"
+    # YOUR CODE GOES HERE. PLEASE REMOVE THIS LINE
+
+2.The output of the program should be:
+
+    3 times the value of str -> 3 * str
+    followed by a new line
+    followed by the 9 first characters of str -> we use indexing and slicing
+    followed by a new line
+
+You are not allowed to use any loops or conditional statement
+Your program should be maximum 5 lines long
