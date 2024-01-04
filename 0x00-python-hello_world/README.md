@@ -104,3 +104,9 @@ conditions and requirements
     Your program should be exactly 5 lines long
     You are not allowed to create new variables
     You are not allowed to use string literals
+TIP:Be carefull with the indexing
+
+#TASK9. Easter egg
+1.print the zen of python - imprting this module
+2.It is a script - shebang
+3.It should be executable - chmod command
