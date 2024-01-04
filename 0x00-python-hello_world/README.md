@@ -16,7 +16,26 @@
     # YOUR CODE GOES HERE. PLEASE REMOVE THIS LINE
 
 2.It should be an executable file .... chmod +x filename
-3.The output of the script should be:
+3.The output of the script should be as follows:
 
-    the number, followed by Battery street,
+    the number which is 98, followed by the string Battery street,
     followed by a new line.You are not allowed to cast the variable number into a string.we use f-strings.and it should be 3 lines long
+
+    TIP: Don't forget to add a format specifier %d
+
+    DONE
+
+#TASK4.Print 
+1.We are completing the following source code
+    #!/usr/bin/python3
+    number = 3.14159
+    # YOUR CODE GOES HERE. PLEASE REMOVE THIS LINE
+2.The output of the program should be:
+
+    the string Float:, followed by the FLOAT with ONLY TWO DIGITS --- format specifiers
+    followed by a NEW LINE
+
+You are not allowed to cast number to string
+You have to use f-strings
+3.It is a script so chmod thing should apply
+
