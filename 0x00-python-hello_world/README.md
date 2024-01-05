@@ -110,3 +110,10 @@ TIP:Be carefull with the indexing
 1.print the zen of python - imprting this module
 2.It is a script - shebang
 3.It should be executable - chmod command
+
+
+#TASK11 HELLO,write
+-It is a python script --- shebang
+-script to print  to stderr -- sys.stderr.write
+-exit with status code 1 -- exit(1)
+
