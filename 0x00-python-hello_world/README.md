@@ -117,3 +117,20 @@ TIP:Be carefull with the indexing
 -script to print  to stderr -- sys.stderr.write
 -exit with status code 1 -- exit(1)
 
+#TASK12 Compile
+it is a script and should be executable -- shebang and chmod
+python file stored in env variable $PYFILE -- python3 "$PYFILE"
+Main code in main.py which we rename to my_main.py and output file will be my_main.pyc
+
+
+
+
+
+
+
+
+
+
+
+
+
