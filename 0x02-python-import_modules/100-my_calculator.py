@@ -7,17 +7,16 @@ if __name__ == "__main__":
     operator = sys.argv[-2]
     operations = {
         "+": add,
-        "-":sub,
-        "*":mul,
+        "-": sub,
+        "*": mul,
         "/": div
         }
     argument_len = len(sys.argv)
     if (argument_len - 1) != 3:
         sys.stderr.write("Usage: ./100-my_calculator.py <a> <operator> <b>\n")
         sys.exit(1)
-    
-    elif (sys.argv[2]) not in operations.keys():
-         print("Unknown operator. Available operators: +, -, * and /")
 
-    else:
-        print("{} {} {} = {}".format(a, operator, b, operations[sys.argv[2]](a, b)))
+    elif (sys.argv[2]) not in operations.keys():
+        print("Unknown operator. Available operators: +, -, * and /")
+
+    print("{}{}{} = {}".format(a, operator, b, operations[sys.argv[2]](a, b)))
