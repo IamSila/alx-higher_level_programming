@@ -1,1 +1,1 @@
-1, 2, 3]
+divisible_by_2(my_list)
