@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 def print_sorted_dictionary(a_dictionary):
-    ordered_list = list(a_dictionary.keys())
-    ordered_list.sort()
-    for i in ordered_list:
+    ordlist = list(a_dictionary.keys())
+    ordlist.sort()
+    for i in ordlist:
         print("{}: {}".format(i, a_dictionary.get(i)))
