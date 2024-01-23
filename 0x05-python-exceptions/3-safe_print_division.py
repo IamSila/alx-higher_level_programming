@@ -1,0 +1,8 @@
+#!/usr/bin/python3
+
+def safe_print_division(a, b):
+    try:
+        division = a / b
+    except ZeroDivisionError:
+        return None
+    return division
