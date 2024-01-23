@@ -3,6 +3,6 @@
 def safe_print_division(a, b):
     try:
         a / b
-    except ZeroDivisionError:
+    except Exception:
         return None
     return a / b
