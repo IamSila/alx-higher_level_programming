@@ -1,1 +1,1 @@
-Square(3)
+my_square.size = 3
