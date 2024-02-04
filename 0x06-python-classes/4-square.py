@@ -12,12 +12,10 @@ class Square:
         # Validate and set the size attribute using the setter method
         self.size = size
 
-    @property
     def size(self):
         """Getter method to retrieve the size attribute."""
         return self.__size
 
-    @size.setter
     def size(self, value):
         """Setter method to set the size attribute.
 
