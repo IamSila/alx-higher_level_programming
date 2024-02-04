@@ -4,7 +4,7 @@
 
 class Square:
     """This method initializes the class
-    
+
     Initialize a Square instance with a given size.
 
         Args:
