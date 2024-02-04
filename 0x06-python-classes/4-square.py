@@ -1,3 +1,7 @@
+#!/usr/bin/python3
+"""A class carring the properties and the methods of a square"""
+
+
 class Square:
     def __init__(self, size=0):
         """Initialize a Square instance with a given size.
