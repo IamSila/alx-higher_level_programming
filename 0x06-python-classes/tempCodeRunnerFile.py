@@ -1,1 +1,1 @@
-my_square.size = 3
+def __init__(self, size=0)

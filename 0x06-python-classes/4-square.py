@@ -12,10 +12,12 @@ class Square:
         # Validate and set the size attribute using the setter method
         self.size = size
 
+    @property
     def size(self):
         """Getter method to retrieve the size attribute."""
         return self.__size
 
+    @size.setter
     def size(self, value):
         """Setter method to set the size attribute.
 
@@ -26,12 +28,15 @@ class Square:
             TypeError: If size is not an integer.
             ValueError: If size is less than 0.
         """
+        # Validate that size is an integer
         if not isinstance(value, int):
             raise TypeError("size must be an integer")
 
+        # Validate that size is greater than or equal to 0
         if value < 0:
             raise ValueError("size must be >= 0")
 
+        # Set the size attribute
         self.__size = value
 
     def area(self):
