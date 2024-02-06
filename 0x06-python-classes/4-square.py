@@ -1,45 +1,34 @@
 #!/usr/bin/python3
-"""A class carring the properties and the methods of a square"""
+"""Create a Class Square with size, method of area and getters & setters"""
 
 
 class Square:
-    def __init__(self, size=0):
-        """Initialize a Square instance with a given size.
+    """Class - Square"""
 
-        Args:
-            size (int): The size of the square (default is 0).
-        """
-        # Validate and set the size attribute using the setter method
+    def __init__(self, size=0):
+        """Constructor of a Square with the size"""
         if (type(size) is not int):
             raise (TypeError("size must be an integer"))
         elif (size < 0):
             raise (ValueError("size must be >= 0"))
-        
-        self.__size = size
+        else:
+            self.__size = size
+
+    def area(self):
+        """Method to get the area of the Square"""
+        return (self.__size ** 2)
 
     @property
     def size(self):
-        """Getter method to retrieve the size attribute."""
-        return self.__size
+        """Getter of the private attribute size"""
+        return (self.__size)
 
     @size.setter
     def size(self, value):
-        """Setter method to set the size attribute.
-
-        Args:
-            value (int): The size value to set.
-
-        Raises:
-            TypeError: If size is not an integer.
-            ValueError: If size is less than 0.
-        """
-        
-        if not isinstance(value, int):
-            raise TypeError("size must be an integer")
-        if value < 0:
-            raise ValueError("size must be >= 0")
-        self.__size = value
-
-    def area(self):
-        """Calculate and return the area of the square."""
-        return self.__size ** 2
+        """Setter for the size private attribute"""
+        if (type(value) is not int):
+            raise (TypeError("size must be an integer"))
+        elif (value < 0):
+            raise (ValueError("size must be >= 0"))
+        else:
+            self.__size = value
