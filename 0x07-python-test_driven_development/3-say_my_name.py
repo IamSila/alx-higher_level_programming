@@ -6,16 +6,18 @@ This program print a message with the next format:
 
 
 def say_my_name(first_name, last_name=""):
-
     """
     This function print the next message: My name is <first name> <last name>
     Args:
-      - first name: str holding the first name
-      - last name: str (Optional) holding last name
+      - first name: str
+      - last name: str (Optional)
     """
 
     if not isinstance(first_name, str):
-        raise TypeError("first_name must be a string")
+        raise TypeError('first_name must be a string')
+
     if not isinstance(last_name, str):
-        raise TypeError("last_name must be a string")
-    print(f"My name is {first_name} {last_name}")
+        raise TypeError('last_name must be a string')
+
+    print(f'My name is {first_name} {last_name}')
+    
