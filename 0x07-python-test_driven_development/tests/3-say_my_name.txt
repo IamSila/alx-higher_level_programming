@@ -1,0 +1,35 @@
+# doctest_3-say_my_name.py
+===============================
+Tests to 3-say_my_name.py
+===============================
+
+This library is for printing the full name of a user (only int) and the function is called
+``say_my_name(first_name, last_name)``.
+
+File ``3-say_my_name.py``
+
+Return: My name is <first name> <last name>
+
+Importing the function:
+
+	  >>> say_my_name = __import__('3-say_my_name').say_my_name
+
+Test to realize: 
+        >>> say_my_name("John", "Doe")
+        My name is John Doe
+
+        >>> say_my_name("Bob", last_name="Smith")
+        My name is Bob Smith
+
+        >>> say_my_name("123", "456")
+        My name is 123 456
+
+        >>> say_my_name(123, "Doe")
+        Traceback (most recent call last):
+            ...
+        TypeError: first_name must be a string
+
+        >>> say_my_name("John", 789)
+        Traceback (most recent call last):
+            ...
+        TypeError: last_name must be a string
