@@ -1,16 +1,19 @@
 #!/usr/bin/python3
+"""This program add two integers"""
+
 
 def add_integer(a, b=98):
-    '''
-        This function adds two integers
-    '''
-    if not (isinstance(a, (int, float))):
-        raise TypeError("a must be an integer")
-    elif not isinstance(b, (int, float)):
-        raise TypeError("b must be an integer")
-    elif isinstance(a, float):
-        a = int(a)
-    elif isinstance(b, float):
-        b = int(b)
+    """
+    Add two integers
+    Args
+      a: Int or float and is first argument
+      b: Int or float
+    """
 
-    return a + b
+    if (type(a) not in [int, float]):
+        raise TypeError("a must be an integer")
+
+    if (type(b) not in [int, float]):
+        raise TypeError("b must be an integer")
+
+    return int(a) + int(b)
