@@ -1,35 +1,60 @@
-# doctest_3-say_my_name.py
+# doctest_3-say_my_name.txt
 ===============================
-Tests to 3-say_my_name.py
+Tests to 3-say_my_name.txt
 ===============================
 
-This library is for printing the full name of a user (only int) and the function is called
-``say_my_name(first_name, last_name)``.
+This library print a message  with the next format "Hello my name is <name> <last_name:optional>
+``say_my_name(first_name, last_name="")``.
 
 File ``3-say_my_name.py``
 
-Return: My name is <first name> <last name>
+Return: None
 
 Importing the function:
 
 	  >>> say_my_name = __import__('3-say_my_name').say_my_name
 
 Test to realize: 
-        >>> say_my_name("John", "Doe")
-        My name is John Doe
 
-        >>> say_my_name("Bob", last_name="Smith")
-        My name is Bob Smith
+     >>> say_my_name('Diego', 'Linares')
+     My name is Diego Linares
 
-        >>> say_my_name("123", "456")
-        My name is 123 456
+     >>> say_my_name('Luis', 'Manrique')
+     My name is Luis Manrique
 
-        >>> say_my_name(123, "Doe")
-        Traceback (most recent call last):
-            ...
-        TypeError: first_name must be a string
+     >>> say_my_name('Smith', 'Flores')
+     My name is Smith Flores
 
-        >>> say_my_name("John", 789)
-        Traceback (most recent call last):
-            ...
-        TypeError: last_name must be a string
+     >>> say_my_name('Carlos', 'Soria')
+     My name is Carlos Soria
+
+     >>> say_my_name('Miguel')
+     My name is Miguel 
+
+     >>> say_my_name('Salomon')
+     My name is Salomon 
+
+     >>> say_my_name(4)
+     Traceback (most recent call last):
+     	       ...
+     TypeError: first_name must be a string
+
+     >>> say_my_name()
+     Traceback (most recent call last):
+	  ...
+     TypeError: say_my_name() missing 1 required positional argument: 'first_name'
+
+     >>> say_my_name(['Diego'], 'Linares')
+     Traceback (most recent call last):
+     	       ...
+     TypeError: first_name must be a string
+
+     >>> say_my_name(['Diego'], ['Linares'])
+     Traceback (most recent call last):
+     	       ...
+     TypeError: first_name must be a string
+
+     >>> say_my_name('Diego', 5)
+     Traceback (most recent call last):
+     	       ...
+     TypeError: last_name must be a string
