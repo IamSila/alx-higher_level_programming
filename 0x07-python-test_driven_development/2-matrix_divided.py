@@ -1,11 +1,10 @@
 #!/usr/bin/python3
 """
-This program divides a matrix of by a divisor
+This program divide a matrix of by a divisor
 Definition:
 - matrix: list of list
 - numbers: float or int
 - divisor: float or int
-
 """
 
 
@@ -17,12 +16,11 @@ def matrix_divided(matrix, div):
       - div (int or float)
     The lists inside of the matrix must be of the same size
     """
-    result_matrix = []
-    error_message = 'matrix must be a matrix\
-          (list of lists) of integers/floats'
+    new_matrix = []
+    long_error = 'matrix must be a matrix (list of lists) of integers/floats'
 
     if not isinstance(matrix, list):
-        raise TypeError(error_message)
+        raise TypeError(long_error)
 
     if (type(div) not in [int, float]):
         raise TypeError('div must be a number')
@@ -31,21 +29,21 @@ def matrix_divided(matrix, div):
         raise ZeroDivisionError('division by zero')
 
     if len(matrix) == 0:
-        return result_matrix
+        return new_matrix
 
     elements = len(matrix[0])
 
     for row in matrix:
         if not isinstance(row, list):
-            raise TypeError(error_message)
+            raise TypeError(long_error)
 
         if len(row) != elements:
-            raise TypeError('Rows in the matrix must have the same length')
+            raise TypeError('Each row of the matrix must have the same size')
 
         for num in row:
             if (type(num) not in [int, float]):
-                raise TypeError(error_message)
+                raise TypeError(long_error)
 
-        result_matrix.append(list(map(lambda num: round(num / div, 2), row)))
+        new_matrix.append(list(map(lambda num: round(num / div, 2), row)))
 
-    return result_matrix
+    return new_matrix
