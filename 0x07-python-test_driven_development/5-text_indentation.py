@@ -17,10 +17,10 @@ def text_indentation(text):
         raise TypeError('text must be a string')
 
     delimitors = '.:?'
-    final_text = text
+    final = text
 
-    for delimitor in delimitors:
-        final = f'{delimitor}\n\n'.join(
-            (list(map(lambda w: w.strip(' '), final_text.split(delimitor))))
+    for cut in delimitors:
+        final = f'{cut}\n\n'.join(
+            (list(map(lambda w: w.strip(' '), final.split(cut))))
         )
-    print(final_text, end='')
+    print(final, end='')
