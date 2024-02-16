@@ -2,7 +2,7 @@
 """Rectangle class"""
 
 
-class Rectangle:
+class Rectangle():
     def __init__(self):
         """this method does no task"""
         pass
