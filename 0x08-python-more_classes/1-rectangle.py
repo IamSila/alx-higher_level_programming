@@ -1,48 +1,58 @@
 #!/usr/bin/python3
-"""Rectangle class with rectangle attributes"""
+"""This program define a class Rectangle with it attributes"""
 
 
 class Rectangle():
-    """Has xtics of a rectangle"""
+    """
+    A Rectangle Class with the private instance attributes width and height
+    """
+
     def __init__(self, width=0, height=0):
-        """Instantiation with optional width and height"""
-        self.width = width
+        """
+        Constructor of the class Rectangle
+          Args:
+            - width (default = 0): int
+            - heigth (default = 0): int
+        """
         self.height = height
+        self.width = width
 
     @property
     def width(self):
-        """Retrieves the width property"""
+        """Getter of the property width"""
         return self.__width
 
     @width.setter
     def width(self, value):
         """
-        sets the value of the width
-            args:
-                value: int holding width
+        Getter of the property value
+          Args:
+            - value: int
         """
         if not isinstance(value, int):
-            raise TypeError("width must be an integer")
+            raise TypeError('width must be an integer')
 
         if value < 0:
-            raise ValueError("width must be >= 0")
+            raise ValueError('width must be >= 0')
+
         self.__width = value
 
     @property
     def height(self):
-        """returns the value of the height"""
+        """Getter of the property height"""
         return self.__height
 
     @height.setter
     def height(self, value):
         """
-        sets the height
-            args:
-                - value - int value for the height
+        Getter of the property value
+          Args:
+            - value: int height
         """
         if not isinstance(value, int):
-            raise TypeError("height must be an integer")
+            raise TypeError('height must be an integer')
 
         if value < 0:
-            raise ValueError("height must be an integer")
+            raise ValueError('height must be >= 0')
+
         self.__height = value
