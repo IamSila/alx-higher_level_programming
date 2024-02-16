@@ -1,8 +1,7 @@
 #!/usr/bin/python3
-"""Rectangle class"""
+"""This program create an empty Rectangle Class"""
 
 
 class Rectangle():
-    def __init__(self):
-        """this method does no task"""
-        pass
+    """Does nothing"""
+    pass
