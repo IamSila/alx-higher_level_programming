@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+"""This program define a class Rectangle with it attributes"""
+
 
 class Rectangle():
     """
