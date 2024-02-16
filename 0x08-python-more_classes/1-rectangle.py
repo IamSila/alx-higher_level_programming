@@ -25,7 +25,7 @@ class Rectangle():
     @width.setter
     def width(self, value):
         """
-        Getter of the property value
+        Setter of the property value
           Args:
             - value: int
         """
@@ -45,7 +45,7 @@ class Rectangle():
     @height.setter
     def height(self, value):
         """
-        Getter of the property value
+        Setter of the property value
           Args:
             - value: int height
         """
