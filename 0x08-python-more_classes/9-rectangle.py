@@ -64,6 +64,11 @@ class Rectangle():
             return rect_1
         return rect_2
 
+    @classmethod
+    def square(cls, size=0):
+        """Class method that returns a new Rectangle instance."""
+        return cls(size, size)
+
     def __str__(self):
         """
         Return a string representation of the rectangle.
@@ -74,7 +79,7 @@ class Rectangle():
         if self.__width == 0 or self.__height == 0:
             return ""
         symbol = str(self.print_symbol)
-        final = [symbol * self.__width for h in range(self.__height)]
+        final = [character * self.__width for character in '#' * self.__height]
 
         return '\n'.join(final)
 
@@ -156,8 +161,3 @@ class Rectangle():
             raise ValueError('height must be >= 0')
 
         self.__height = value
-
-    @classmethod
-    def square(cls, size=0):
-        """Returns a new Rectangle instance with width == height == size"""
-        return cls(width=size, height=size)
