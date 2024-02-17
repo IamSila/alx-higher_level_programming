@@ -55,8 +55,8 @@ class Rectangle():
         """
         if self.__width == 0 or self.__height == 0:
             return ""
-
-        final = [str(self.print_symbol) * self.__width for h in range(self.__height)]
+        symbol = str(self.print_symbol)
+        final = [symbol * self.__width for h in range(self.__height)]
 
         return '\n'.join(final)
 
