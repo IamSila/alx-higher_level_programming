@@ -1,13 +1,13 @@
 #!/usr/bin/python3
+"""
+This program define a LockedClass that you only can set
+the attribute first_name
+"""
+
 
 class LockedClass():
     """
-    LockedClass is a class that restricts the set
-    of attributes itsinstances can have.
-
-    Attributes:
-    __slots__ (tuple): A tuple specifying the allowed attributes
-    for instances of the class.
+    This class is Locked and you can only put the attribute first_name
     """
 
-    __slots__ = ('first_name',)
+    __slots__ = ('first_name', )
