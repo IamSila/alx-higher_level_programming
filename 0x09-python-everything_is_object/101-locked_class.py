@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-class LockedClass:
+class LockedClass():
     """
     LockedClass is a class that restricts the set
     of attributes itsinstances can have.
