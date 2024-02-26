@@ -28,4 +28,3 @@ if (__name__ == "__main__"):
     else:
         result = div(number1, number2)
     print("{:d} {:s} {:d} = {:d}".format(number1, operator, number2, result))
-    
