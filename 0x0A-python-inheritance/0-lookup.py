@@ -2,6 +2,7 @@
 
 """function called lookup"""
 
+
 def lookup(obj):
     """
     Returns a list of attributes and methods of the input object.
