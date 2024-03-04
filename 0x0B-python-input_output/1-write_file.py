@@ -2,8 +2,9 @@
 """function called write_file
     args:
         filename - the file to write
-        text - the text to write to the file          
+        text - the text to write to the file
 """
+
 
 def write_file(filename="", text=""):
     """
@@ -12,4 +13,3 @@ def write_file(filename="", text=""):
     """
     with open(filename, 'w', encoding='utf-8') as f:
         return f.write(text)
-
