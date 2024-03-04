@@ -10,4 +10,7 @@ import json
 
 
 def save_to_json_file(my_obj, filename):
+    """convert data to a json format and
+    save to a file called filename
+    """
     filename = json.dumps(my_obj)
