@@ -13,4 +13,6 @@ def save_to_json_file(my_obj, filename):
     """convert data to a json format and
     save to a file called filename
     """
-    filename = json.dumps(my_obj)
+    with open(filename, mode='w') as a_file:
+        a_file = json.dumps(my_obj)
+        return a_file
