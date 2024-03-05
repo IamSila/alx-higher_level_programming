@@ -25,7 +25,8 @@ if __name__ == "__main__":
 
     size = 0
     status_codes = {}
-    possible_status_codes = ['200', '301', '400', '401', '403', '404', '405', '500']
+    possible_status_codes =\
+        ['200', '301', '400', '401', '403', '404', '405', '500']
     count = 0
 
     try:
