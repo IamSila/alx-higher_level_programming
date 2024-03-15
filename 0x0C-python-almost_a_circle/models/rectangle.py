@@ -87,3 +87,11 @@ class Rectangle(Base):
         """Displays the shape of the rectangle using #"""
         for x in range(0, self.__height):
             print("#" * self.__width)
+
+    def __str__(self):
+        """return a string in the form
+        [Rectangle] (<id>) <x>/<y> - <width>/<height>
+        """
+        return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id,
+                                                       self.x, self.y,
+                                                       self.width, self.height)
