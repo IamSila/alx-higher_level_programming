@@ -1,18 +1,26 @@
 #!/usr/bin/python3
 
-"""This is a class called base class to act as the parent class"""
+"""Defines a base model class."""
 
 
-class Base(object):
-    """Defining the attributes of the class"""
+class Base:
+    """Base model.
+
+    This Represents the "base" for all other classes in project 0x0C*.
+
+    Private Class Attributes:
+        __nb_object (int): Number of instantiated Bases.
+    """
 
     __nb_objects = 0
 
     def __init__(self, id=None):
+        """Initialize a new Base.
+
+        Args:
+            id[int]: The identity of the new Base.
         """
-        initializing the class attributes
-        """
-        if self.id is not None:
+        if id is not None:
             self.id = id
         else:
             Base.__nb_objects += 1
