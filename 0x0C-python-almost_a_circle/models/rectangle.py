@@ -1,88 +1,52 @@
 #!/usr/bin/python3
-
-"""defines a Rectangle class."""
+'''Module for Rectangle class.'''
 from models.base import Base
 
 
 class Rectangle(Base):
-    """
-    Rectangle model.
-
-    This class inherits from the Base class
-
-    Private instance Attributes:
-       __width (int): The width of the rectangle.
-       __height (int): The height of the rectangle
-       x -
-       y -
-    """
+    '''A Rectangle class.'''
 
     def __init__(self, width, height, x=0, y=0, id=None):
-        """Initialize a new Rectangle.
-
-        Args:
-            width(int): The width of the rectangle
-            height - height of the rectangle
-            x - x of the rectangle
-            y - y of the rectangle
-            id - is the id of the rectangle
-        """
+        '''Constructor.'''
         super().__init__(id)
-        self.__width = width
-        self.__height = height
-        self.__x = x
-        self.__y = y
+        self.width = width
+        self.height = height
+        self.x = x
+        self.y = y
 
-        @property
-        def width(self):
-            """width of the rectangle"""
-            return self.__width
+    @property
+    def width(self):
+        '''Width of this rectangle.'''
+        return self.__width
 
-        @property
-        def height(self):
-            """
-            height of the rectangle
-            """
-            return self.__height
+    @width.setter
+    def width(self, value):
+        self.validate_integer("width", value, False)
+        self.__width = value
 
-        @property
-        def x(self):
-            """x of the rectangle"""
-            return self.__x
+    @property
+    def height(self):
+        '''Height of this rectangle.'''
+        return self.__height
 
-        @property
-        def y(self):
-            """y of the rectangle"""
-            return self.__y
+    @height.setter
+    def height(self, value):
+        self.__height = value
 
-        @width.setter
-        def width(self, value):
-            if type(value) != int:
-                raise TypeError("height must be an integer")
-            if value <= 0:
-                raise ValueError("height must be > 0")
-            self.__width = value
+    @property
+    def x(self):
+        '''x of this rectangle.'''
+        return self.__x
 
-        @height.setter
-        def height(self, value):
-            if type(value) != int:
-                raise TypeError("height must be an integer")
-            if value <= 0:
-                raise ValueError("height must be > 0")
-            self.__height = value
+    @x.setter
+    def x(self, value):
+        self.__x = value
 
-        @x.setter
-        def x(self, value):
-            if type(value) != int:
-                raise TypeError("height must be an integer")
-            if value <= 0:
-                raise ValueError("height must be > 0")
-            self.__x = value
+    @property
+    def y(self):
+        '''y of this rectangle.'''
+        return self.__y
 
-        @width.setter
-        def y(self, value):
-            if type(value) != int:
-                raise TypeError("height must be an integer")
-            if value <= 0:
-                raise ValueError("height must be > 0")
-            self.__y = value
+    @y.setter
+    def y(self, value):
+        self.__y = value
