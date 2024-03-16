@@ -2,6 +2,8 @@
 
 """Defines a base model class."""
 import json
+import csv
+import turtle
 
 
 class Base:
@@ -37,3 +39,19 @@ class Base:
         if list_dictionaries is None or list_dictionaries == []:
             return "[]"
         return json.dumps(list_dictionaries)
+
+    @classmethod
+    def save_to_file(cls, list_objs):
+        """Write the JSON serialization of a list of objects to a file.
+
+        Args:
+            list_objs (list): A list of inherited Base instances.
+        """
+        my_file = cls.__name__ + ".json"
+        with open(my_file, "w", encoding="utf-8") as json_file:
+            if list_objs is None:
+                json_file.write("[]")
+            else:
+                list_dicts = [key_value.to_dictionary()
+                              for key_value in list_objs]
+                json_file.write(Base.to_json_string(list_dicts))
