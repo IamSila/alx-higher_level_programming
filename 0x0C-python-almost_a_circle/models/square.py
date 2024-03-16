@@ -4,6 +4,8 @@ from models.rectangle import Rectangle
 
 
 class Square(Rectangle):
+    """Represent a square."""
+
     def __init__(self, size, x=0, y=0, id=None):
         """Initialize a new Square.
 
@@ -16,6 +18,6 @@ class Square(Rectangle):
         super().__init__(size, size, x, y, id)
 
     def __str__(self):
-        '''Returns string info about this square.'''
-        return '[{}] ({}) {}/{} - {}'.\
-            format(type(self).__name__, self.id, self.x, self.y, self.width)
+        """Return the print() and str() representation of a Square."""
+        return "[Square] ({}) {}/{} - {}".format(self.id, self.x, self.y,
+                                                 self.width)
