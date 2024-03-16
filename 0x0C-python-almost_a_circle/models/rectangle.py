@@ -142,6 +142,11 @@ class Rectangle(Base):
                 elif k == "y":
                     self.y = v
 
+    def to_dictionary(self):
+        '''Returns dictionary representation of this rectangle class.'''
+        return {"id": self.id, "size": self.width,
+                "x": self.x, "y": self.y}
+
     def __str__(self):
         """return a string in the form
         [Rectangle] (<id>) <x>/<y> - <width>/<height>
