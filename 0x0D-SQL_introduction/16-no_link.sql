@@ -1,7 +1,3 @@
--- Lists the number of records with the same score in the table second_table.
--- Records are ordered by descending count.
+-- Write a script that lists all records of the table second_table of the database hbtn_0c_0 in your MySQL server.
 
-SELECT `score`, COUNT(*) AS `number`
-FROM `second_table`
-GROUP BY `score`
-ORDER BY `number` DESC;
+SELECT score, name FROM second_table WHERE LENGTH(name) > 0 ORDER BY score DESC;
