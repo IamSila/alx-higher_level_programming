@@ -1,3 +1,6 @@
+#!/usr/bin/python3
+"""lists all states in order of id"""
+
 import MySQLdb
 from sys import argv
 if __name__ == "__main__":
