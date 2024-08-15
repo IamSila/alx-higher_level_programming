@@ -4,16 +4,16 @@
 from sys import argv
 from model_state import Base, State
 from model_city import City
-from sqlalchemy import (create_engine)
+from sqlalchemy import (create_my_engine)
 from sqlalchemy.orm import sessionmaker
 
 if __name__ == "__main__":
-    engine = create_engine(
+    my_engine = create_my_engine(
                 'mysql+mysqldb://{}:{}@localhost:3306/{}'
                 .format(argv[1], argv[2], argv[3]), pool_pre_ping=True)
-    Base.metadata.create_all(engine)
+    Base.metadata.create_all(my_engine)
 
-    Session = sessionmaker(bind=engine)
+    Session = sessionmaker(bind=my_engine)
     session = Session()
     rows = session.query(City, State).\
         filter(City.state_id == State.id).all()
