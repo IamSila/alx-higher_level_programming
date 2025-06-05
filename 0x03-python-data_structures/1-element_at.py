@@ -1,9 +1,11 @@
 #!/usr/bin/python3
 
 
-def element_at(my_list, idx):
+def element_at(my_list, idx: int):
+    """returns an element at index position specified"""
     if idx < 0:
         return None
-    if idx > len(my_list):
+    elif idx > len(my_list):
         return None
-    return my_list[idx]
+    else:
+        return my_list[idx]
