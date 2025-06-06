@@ -3,7 +3,7 @@
 
 def multiple_returns(sentence):
     """returns two value the length and the first character"""
-    if sentence:
-        length = len(sentence)
-        first = sentence[0] if length > 0 else None
-        return length, first
+
+    length = len(sentence)
+    first = sentence[0] if length > 0 else None
+    return length, first
