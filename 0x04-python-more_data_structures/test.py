@@ -1,5 +1,7 @@
 a_dictionary = { 'language': "C", 'number': 13, 'track': "Low level" }
 
-length = len(a_dictionary.keys())
+keys = sorted(list(a_dictionary))
+print(keys)
 
-print(length)
+for key in keys:
+    print(key,":", a_dictionary[key])
