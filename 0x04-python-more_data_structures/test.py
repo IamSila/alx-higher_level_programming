@@ -1,7 +1,4 @@
-a_dictionary = { 'language': "C", 'number': 13, 'track': "Low level" }
+a_dictionary = { 'language': 1, 'number': 13, 'track': 3 }
 
-keys = sorted(list(a_dictionary))
-print(keys)
-
-for key in keys:
-    print(key,":", a_dictionary[key])
+for value in a_dictionary.values():
+    print(value ** 2)
