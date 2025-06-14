@@ -1,16 +1,16 @@
 #!/usr/bin/python3
 
 
-def weight_evarage(my_list=[]):
-    """calculates the weighted evarage of values in a tuple"""
+def weight_average(my_list=[]):
     if not my_list:
         return 0
 
     numerator = 0
     denominator = 0
 
-    for element in my_list:
-        numerator += element[0] * element[1]
-        denominator += element[1]
-    weightedAverage = numerator / denominator
-    return weightedAverage
+    for elements in my_list:
+        numerator += elements[0] * elements[1]
+        denominator += elements[1]
+
+    evarage = numerator / denominator
+    return evarage
