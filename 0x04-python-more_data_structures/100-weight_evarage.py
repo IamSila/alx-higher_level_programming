@@ -3,15 +3,14 @@
 
 def weight_evarage(my_list=[]):
     """calculates the weighted evarage of values in a tuple"""
-
-    result = 0
-    total = 0
-
     if not my_list:
         return 0
 
-    for i in my_list:
-        result += i[0] * i[1]
-        total += i[1]
-    weightedAverage = result / total
+    numerator = 0
+    denominator = 0
+
+    for element in my_list:
+        numerator += element[0] * element[1]
+        denominator += element[1]
+    weightedAverage = numerator / denominator
     return weightedAverage
