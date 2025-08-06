@@ -1,5 +1,6 @@
 #!/usr/bin/node
 
+// This file defines a Rectangle class.
 class Rectangle {
 
 }
