@@ -1,9 +1,9 @@
-#!usr/bin/node
-// Rectangle Class with validation for width and height
-
+#!/usr/bin/node
+// Checked Rectangle Class with print()
 class Rectangle {
   constructor (w, h) {
-    if (parseInt(w) > 0 && parseInt(h) > 0) {
+    if ((w = parseInt(w)) && w > 0 &&
+        (h = parseInt(h)) && h > 0) {
       this.width = w;
       this.height = h;
     }
@@ -14,4 +14,5 @@ class Rectangle {
       .slice(0, -1).join(''));
   }
 }
+
 module.exports = Rectangle;
