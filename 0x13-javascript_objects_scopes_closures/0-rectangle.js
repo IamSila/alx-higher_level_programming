@@ -1,8 +1,6 @@
 #!/usr/bin/node
-
-// This file defines a Rectangle class.
+// Empty Rectangle Class
 class Rectangle {
 }
 
-// This code defines a Rectangle class and exports it for use in other files.
 module.exports = Rectangle;
